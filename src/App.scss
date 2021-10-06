@@ -1,0 +1,47 @@
+.board {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+
+	.grid {
+
+
+		div {
+			display: flex;
+
+			> button {
+				flex-basis: 33.333%;
+				width: 33.333%;
+				border: 1px solid #000;
+				height: 100px;
+				justify-content: center;
+				align-items: center;
+				display: flex;
+				cursor: pointer;
+				padding: 0;
+				background: transparent;
+				font-size: 40px;
+			}
+		}
+
+		&.done-1 div:nth-of-type(1) button,
+		&.done-2 div:nth-of-type(2) button,
+		&.done-3 div:nth-of-type(3) button,
+		&.done-4 > div > button:nth-of-type(1),
+		&.done-5 > div > button:nth-of-type(2),
+		&.done-6 > div > button:nth-of-type(3),
+		&.done-7 > div:nth-of-type(1) > button:nth-of-type(1),
+		&.done-7 > div:nth-of-type(2) > button:nth-of-type(2),
+		&.done-7 > div:nth-of-type(3) > button:nth-of-type(3),
+		&.done-8 > div:nth-of-type(1) > button:nth-of-type(3),
+		&.done-8 > div:nth-of-type(2) > button:nth-of-type(2),
+		&.done-8 > div:nth-of-type(3) > button:nth-of-type(1) {
+			background: #2d7f2b24;
+		}
+	}
+
+	.stats {
+		font-weight: 700;
+		margin-top: 10px;
+	}
+}
